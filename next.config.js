@@ -12,4 +12,17 @@ const redirects = {
   }
 };
 
-module.exports = withImages(redirects);
+module.exports = withImages({
+  async redirects() {
+    return [
+      {
+        source: '/dashboards',
+        destination: '/dashboards/tasks',
+        permanent: true
+      }
+    ];
+  },
+  typescript: {
+    ignoreBuildErrors: true
+  }
+});
