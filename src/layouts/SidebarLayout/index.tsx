@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react';
 import { Box, alpha, lighten, useTheme } from '@mui/material';
-import PropTypes from 'prop-types';
+import * as PropTypes from 'prop-types';
 
 import Sidebar from './Sidebar';
 import Header from './Header';
