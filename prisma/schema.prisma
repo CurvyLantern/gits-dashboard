@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model Example {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  title String
+  role String
+}
+
+model User {
+  id String @id @default(cuid())
+}
+
+model Product {
+  id                   Int     @id @unique @default(autoincrement())
+  name                 String
+  unit                 String?
+  weight               Int?
+  minimum_purchase_qty Int?
+  tags                 String?
+  barcode              String
+  refundable           Boolean
+  thumbnail_url        String
+  video_url            String?
+  price                String
+  discount             String
+  qty                  Int?
+  description          String?
+  seo_tags             String?
+}
+
