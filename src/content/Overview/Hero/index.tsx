@@ -118,12 +118,9 @@ function Hero() {
             Please create an account or sign in
           </TypographyH2>
         </Grid>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column'
-          }}
-        >
+
+        {/* login form */}
+        <Grid>
           <div>input anything for the dummy purpose</div>
           <form
             onSubmit={(e) => {
@@ -153,10 +150,18 @@ function Hero() {
               </Button>
             </Box>
           </form>
-        </div>
+        </Grid>
       </Grid>
     </Container>
   );
 }
 
-export default Hero;
+// export default Hero;
+
+const Hero2 = () => {
+  return (
+    <main>hello</main>
+  )
+}
+
+export default Hero2

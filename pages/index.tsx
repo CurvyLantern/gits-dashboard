@@ -32,14 +32,7 @@ function Overview() {
       <Head>
         <title>Dashboard for gits-furniture</title>
       </Head>
-      <HeaderWrapper>
-        <Container maxWidth="lg">
-          <Box display="flex" alignItems="center">
-            {/* <Logo /> */}
-            <div>LOGO</div>
-          </Box>
-        </Container>
-      </HeaderWrapper>
+      
       <Hero />
       <Container maxWidth="lg" sx={{ mt: 8 }}>
         <Typography textAlign="center" variant="subtitle1">
